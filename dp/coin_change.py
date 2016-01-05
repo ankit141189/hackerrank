@@ -2,7 +2,7 @@ if __name__ == '__main__':
 	input = raw_input().split()
 	n, m = int(input[0]), int(input[1])
 	coins = sorted([int(x) for x in raw_input().split()])
-	dp = [[None] * m] * (n + 1)
+	dp = [None] * (n + 1)
 	dp[0] = [1] * m
 	for i in range(1, n+1):
 		dp[i] = [0] * m
